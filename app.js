@@ -1,92 +1,47 @@
-// Lista para armazenar os nomes dos amigos
-let listaAmigos = [];
+let amigos = []; // Lista para armazenar os amigos
 
-// Função para adicionar um amigo à lista
+// Função para atualizar a lista na tela
+function atualizarLista() {
+  let lista = document.getElementById("listaAmigos");
+  lista.innerHTML = ""; // Limpa a lista
+
+  let i = 0;
+  while (i < amigos.length) {
+    lista.innerHTML += "<li>" + amigos[i] + "</li>"; // Adiciona cada amigo à lista
+    i++; // Incrementa o contador
+  }
+}
+
+// Função para adicionar um amigo
 function adicionarAmigo() {
-    const input = document.getElementById('amigo');
-    const nome = input.value.trim();
-    
-    if (nome) {
-        if (listaAmigos.includes(nome)) {
-            alert(`O amigo ${nome} já foi adicionado.`);
-            input.value = '';
-            return;
-        }
-        listaAmigos.push(nome);
-        atualizarListaAmigos();
-        input.value = '';
-        input.focus();
-    } else {
-        alert('Por favor, insira um nome.');
-    }
+  let campo = document.getElementById("amigo");
+  let nome = campo.value.trim(); // Remove espaços extras
+
+  if (nome === "") {
+    alert("Por favor, insira um nome.");
+    return;
+  }
+
+  amigos.push(nome); // Adiciona o nome ao array
+  atualizarLista(); // Atualiza a lista exibida
+  campo.value = ""; // Limpa o campo de entrada
 }
 
-// Função para atualizar a lista exibida no HTML
-function atualizarListaAmigos() {
-    let ul = document.getElementById('listaAmigos');
-    
-    // Se o elemento não existir, criá-lo
-    if (!ul) {
-        ul = document.createElement('ul');
-        ul.id = 'listaAmigos';
-        document.querySelector('.list-section').appendChild(ul);
-    }
-    
-    ul.innerHTML = '';
-    
-    listaAmigos.forEach((amigo, index) => {
-        const li = document.createElement('li');
-        li.textContent = amigo;
-        
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Remover';
-        deleteButton.onclick = () => removerAmigo(index);
-        li.appendChild(deleteButton);
-        
-        ul.appendChild(li);
-    });
-}
-
-// Função para remover um amigo da lista
-function removerAmigo(index) {
-    listaAmigos.splice(index, 1);
-    atualizarListaAmigos();
-}
-
-// Função para sortear os amigos
+// Função para sortear um amigo
 function sortearAmigo() {
-    if (listaAmigos.length < 2) {
-        alert('Adicione pelo menos dois amigos para sortear.');
-        return;
-    }
-    
-    const resultado = [...listaAmigos];
-    resultado.sort(() => Math.random() - 0.5);
-    
-    let ul = document.getElementById('resultado');
-    
-    // Se o elemento não existir, criá-lo
-    if (!ul) {
-        ul = document.createElement('ul');
-        ul.id = 'resultado';
-        document.querySelector('.result-section').appendChild(ul);
-    }
-    
-    ul.innerHTML = '';
-    
-    resultado.forEach((amigo, index) => {
-        const li = document.createElement('li');
-        li.textContent = `${amigo} tirou ${resultado[(index + 1) % resultado.length]}`;
-        ul.appendChild(li);
-    });
+  if (amigos.length === 0) {
+    alert("A lista está vazia. Adicione amigos antes de sortear.");
+    return;
+  }
 
-    // Limpar a lista de amigos após o sorteio
-    listaAmigos = [];
-    atualizarListaAmigos();
+  let indiceSorteado = Math.floor(Math.random() * amigos.length);
+  let sorteado = amigos[indiceSorteado]; // Escolhe um nome aleatório
+
+  // Limpa a lista de amigos antes de exibir o sorteado
+  document.getElementById("listaAmigos").innerHTML = "";
+
+  // Exibe o resultado formatado
+  document.getElementById(
+    "resultado"
+  ).innerHTML = `<li><strong>O amigo secreto sorteado é:</strong> ${sorteado} 🎉</li>`;
 }
-
-// Adicionando event listeners aos botões
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.input-section button').addEventListener('click', adicionarAmigo);
-    document.querySelector('.result-section button').addEventListener('click', sortearAmigo);
-});
