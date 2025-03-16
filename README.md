@@ -72,9 +72,12 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
 📝 Este projeto foi desenvolvido para fins educacionais e desafios de lógica.  
 🎨 Sinta-se à vontade para usar, modificar e compartilhar!  
 
+# Teste:   https://jlsgodev.github.io/amigo-secreto/
+
 ---  
 
 Feito com 💙 por (https://github.com/jlsgodev)  
+
 
 
 
