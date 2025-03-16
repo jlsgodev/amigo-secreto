@@ -1,21 +1,86 @@
 
-# Amigo Secreto
 
-Este é um projeto simples de sorteio de amigo secreto, onde você pode adicionar amigos, remover amigos e sortear um amigo secreto de forma aleatória.
+---
 
-## Funcionalidades
+# 🎁 Challenge: Amigo Secreto  
 
-- Adicionar amigos à lista
-- Remover amigos da lista
-- Sortear um amigo secreto aleatoriamente
-- Exibir o resultado do sorteio
+## 📌 Sobre o Projeto  
 
-## Tecnologias Utilizadas
+Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e CSS**. Com uma interface intuitiva, ele permite que os usuários organizem um sorteio de forma automática e prática.  
 
-- HTML
-- CSS
-- JavaScript
+### 🔥 **Funcionalidades**  
 
+✅ **Adicionar amigos** à lista.  
+✅ **Visualizar** os participantes cadastrados.  
+✅ **Sortear automaticamente** os pares do amigo secreto.  
+✅ **Garantia** de que ninguém tire a si mesmo.  
+
+## 🚀 Acesse o Projeto  
+
+[Clique aqui para testar!](#) 🔗  
+
+## 🛠️ Como Funciona?  
+
+### ➕ **Adicionar Amigos** ✍️  
+1. Digite o nome do participante no campo de entrada.  
+2. Clique no botão **"Adicionar"** ➕.  
+3. O nome será inserido na lista de amigos.  
+
+### 🎲 **Sortear Amigo Secreto** 🔀  
+1. Após cadastrar todos os participantes, clique em **"Sortear"** 🎰.  
+2. O sistema selecionará os pares aleatoriamente.  
+3. O resultado será exibido na tela! 🥳  
+
+## 💻 Tecnologias Utilizadas  
+
+- 🏗️ **HTML** → Estruturação da página.  
+- 🎨 **CSS** → Estilização para melhor experiência visual.  
+- ⚡ **JavaScript** → Lógica para adicionar amigos, exibir a lista e realizar o sorteio.  
+
+## 📷 Demonstração  
+
+![Demonstração do Amigo Secreto](#)  
+
+## 📝 Código Explicado  
+
+### 🔹 **Adicionar Amigos** 📝  
+- Captura o nome digitado pelo usuário.  
+- Verifica se o campo não está vazio antes de adicionar.  
+- Insere o nome no array de participantes.  
+
+### 🔹 **Atualizar a Lista** 📋  
+- Exibe dinamicamente os amigos cadastrados na tela.  
+
+### 🔹 **Sortear um Amigo Secreto** 🎯  
+- Gera pares de amigos aleatoriamente, garantindo que ninguém tire a si mesmo.  
+- Exibe o resultado do sorteio de forma clara e interativa.  
+
+## 📌 Exemplo de Uso  
+
+1. 📝 Digite um nome: **João** ➡️ _(Clique em "Adicionar")_  
+   - ✅ **João foi adicionado à lista!**  
+2. 🔄 Repita o processo para mais amigos...  
+3. 📋 **Lista final:**  
+   - ✅ João  
+   - ✅ Maria  
+   - ✅ Pedro  
+4. 🎲 Clique em **"Sortear"**  
+   - ✨ **Resultado**: João tirou Maria, Maria tirou Pedro, Pedro tirou João! 🎉  
+
+## 🖥️ Como Testar Localmente?  
+
+1. 🔽 **Clone o repositório** ou copie os arquivos HTML, CSS e JavaScript.  
+2. 🖥️ Abra o arquivo `index.html` no navegador.  
+3. 🚀 Teste adicionando amigos e realizando o sorteio!  
+
+## 📜 Licença  
+
+📝 Este projeto foi desenvolvido para fins educacionais e desafios de lógica.  
+🎨 Sinta-se à vontade para usar, modificar e compartilhar!  
+
+---  
+
+Feito com 💙 por [Seu Nome](https://github.com/jlsgodev)  
 
 
 ## Como usar
