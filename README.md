@@ -34,9 +34,6 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
 - 🎨 **CSS** → Estilização para melhor experiência visual.  
 - ⚡ **JavaScript** → Lógica para adicionar amigos, exibir a lista e realizar o sorteio.  
 
-## 📷 Demonstração  
-
-![Demonstração do Amigo Secreto](#)  
 
 ## 📝 Código Explicado  
 
