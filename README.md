@@ -15,9 +15,6 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
 ✅ **Sortear automaticamente** os pares do amigo secreto.  
 ✅ **Garantia** de que ninguém tire a si mesmo.  
 
-## 🚀 Acesse o Projeto  
-
-[Clique aqui para testar!](#) 🔗  
 
 ## 🛠️ Como Funciona?  
 
@@ -57,19 +54,19 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
 
 ## 📌 Exemplo de Uso  
 
-1. 📝 Digite um nome: **João** ➡️ _(Clique em "Adicionar")_  
+1. 📝 Digite um nome: **Jhon** ➡️ _(Clique em "Adicionar")_  
    - ✅ **João foi adicionado à lista!**  
 2. 🔄 Repita o processo para mais amigos...  
 3. 📋 **Lista final:**  
-   - ✅ João  
+   - ✅ Jhon 
    - ✅ Maria  
    - ✅ Pedro  
 4. 🎲 Clique em **"Sortear"**  
-   - ✨ **Resultado**: João tirou Maria, Maria tirou Pedro, Pedro tirou João! 🎉  
+   - ✨ **Resultado**: João tirou Maria, Maria tirou Pedro, Pedro tirou Jhon! 🎉  
 
 ## 🖥️ Como Testar Localmente?  
 
-1. 🔽 **Clone o repositório** ou copie os arquivos HTML, CSS e JavaScript.  
+1. 🔽 ** git clone https://github.com/jlsgodev/amigo-secreto.git** ou copie os arquivos HTML, CSS e JavaScript.  
 2. 🖥️ Abra o arquivo `index.html` no navegador.  
 3. 🚀 Teste adicionando amigos e realizando o sorteio!  
 
@@ -80,11 +77,7 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
 
 ---  
 
-Feito com 💙 por [Seu Nome](https://github.com/jlsgodev)  
+Feito com 💙 por (https://github.com/jlsgodev)  
 
 
-## Como usar
 
-1. Clone o repositório:
-   ```sh
-   git clone https://github.com/jlsgodev/amigo-secreto.git
