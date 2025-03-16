@@ -59,7 +59,7 @@ Este é um sorteador de **Amigo Secreto** desenvolvido com **JavaScript, HTML e 
    - ✅ Maria  
    - ✅ Pedro  
 4. 🎲 Clique em **"Sortear"**  
-   - ✨ **Resultado**: João tirou Maria, Maria tirou Pedro, Pedro tirou Jhon! 🎉  
+   - ✨ **Resultado**: Jhon tirou Maria, Maria tirou Pedro, Pedro tirou Jhon! 🎉  
 
 ## 🖥️ Como Testar Localmente?  
 
